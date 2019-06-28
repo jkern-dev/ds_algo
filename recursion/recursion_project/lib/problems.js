@@ -187,13 +187,16 @@ function pathFinder(directories, targetFile) {
   for (let key in directories) {
     if (key === targetFile) {
       return "/" + targetFile;
-    } else if (key === undefined) {
-      return null;
-    } else {
-      let subRes = pathFinder(directories[key]);
-      return subRes === null ? null : key + "/" + subRes; 
+    } 
+    // else if (key === undefined) {
+    //   return null;
+    // } 
+    else {
+      let subRes = pathFinder(directories[key], targetFile);
+      if (subRes) return key + subRes;
     }
   }
+  return null;
 }
 
 
