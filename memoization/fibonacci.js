@@ -1,3 +1,4 @@
+// O(2^n) runtime
 function fib(n) {
   if (n === 1 || n === 2) return 1;
   return fib(n - 1) + fib(n - 2);
@@ -5,6 +6,7 @@ function fib(n) {
 
 // memoized with sub regions of fib sequence saved 
 // if no memo passed it is defaulted to empty object
+// O(n) runtime
 function memFib(n, memo={}) {
   if (n in memo) return memo[n];
   if (n === 1 || n === 2) return 1;
