@@ -57,7 +57,6 @@ class BST {
         return true;
       }
     }
-
     return false;
   }
 
