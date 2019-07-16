@@ -60,7 +60,7 @@ class Queue {
     return removedNode.value;
   }
 
-  size(){
+  size() {
     return this.length;
   }
 }
