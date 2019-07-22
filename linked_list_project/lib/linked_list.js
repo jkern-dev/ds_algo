@@ -25,9 +25,10 @@ class Node {
       this.value = val;
       this.next = null;
     }
+  }
 
 
-class LinkedList {
+  class LinkedList {
     constructor() {
       this.head = null;
       this.tail = null;
