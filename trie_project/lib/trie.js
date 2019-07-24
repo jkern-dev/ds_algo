@@ -23,16 +23,16 @@ class Trie {
     }
   }
 
-  insertIter(word) {
-    let letter = word[0];
-    while (letter) {
-      if (!(letter in this.root.children)) {
-        this.root.children[letter] = new Node();
-      }
+  // insertIter(word) {
+  //   let letter = word[0];
+  //   while (letter) {
+  //     if (!(letter in this.root.children)) {
+  //       this.root.children[letter] = new Node();
+  //     }
 
-      if ()
-    }
-  }
+  //     if ()
+  //   }
+  // }
 }
 
 module.exports = {
