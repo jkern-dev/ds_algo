@@ -10,7 +10,6 @@ function isMaxHeap(array, idx=1) {
         && array[rightChild] < array[idx] 
         && isMaxHeap(array, leftChild) 
         && isMaxHeap(array, rightChild);
-
 }
 
 

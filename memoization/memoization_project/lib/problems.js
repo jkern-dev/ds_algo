@@ -46,7 +46,6 @@ function minChange(coins, amount, memo = {}) {
       numCoins.push(minChange(coins, amount - coin, memo) + 1);
     }
   });
-  // console.log(memo);
   memo[amount] = Math.min(...numCoins);
   return memo[amount];
 }
