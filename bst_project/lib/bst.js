@@ -45,7 +45,6 @@ class BST {
     }
   }
 
-
   searchIter(val) {
     let curr = this.root;
     while (curr) {
@@ -59,7 +58,6 @@ class BST {
     }
     return false;
   }
-
 }
 
   
